@@ -45,9 +45,7 @@ optional arguments:
   ```
 
 ## Krypton Command Reference
-This is the command reference for Krypton, here you can find all of the relevant
-commands for interacting with this password manager. This does not include the
-command line arguments, to view those use the --help or -h argument when running Krypton.
+This is the command reference for Krypton, here you can find all of the relevant commands for interacting with this password manager. You can view a copy of this reference within Krypton by using the `help` command. This does not include the command line arguments, to view those use the `--help` or `-h` argument when running Krypton.
 ```
 Command Reference Legend
 --------
