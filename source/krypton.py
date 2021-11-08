@@ -23,9 +23,9 @@ from Crypto import Random
 import pyperclip
 
 COMMAND_REFERENCE_TEXT:str = """
-This is the command reference for LSPM, here you can find all of the relevant
+This is the command reference for Krypton, here you can find all of the relevant
 commands for interacting with this password manager. This does not include the
-command line flags, to view those use the --help / -h flag when running LSPM.
+command line flags, to view those use the --help / -h flag when running Krypton.
 
 Command Reference Legend
 --------
@@ -36,7 +36,7 @@ N      = Denotes a numerical value, e,g, command [N] (command takes any number a
 {...}  = Denotes a space-separated sequence of parameters of the same type.
 --------
 
-Navigating LSPM:
+Navigating Krypton:
 ====================================================================================================
     [N]                    | Navigate to the page of that number. Any number goes.
 ----------------------------------------------------------------------------------------------------
@@ -58,7 +58,7 @@ Navigating LSPM:
     cp, copy               | Copies the entry selected using the select command to the clipboard.
 ====================================================================================================
 
-Performing Edits In LSPM:
+Performing Edits In Krypton:
 ===================================================================================================
     a, add                 | Add a new entry to the selected account, values will be prompted for.
 ----------------------------------------------------------------------------------------------------
