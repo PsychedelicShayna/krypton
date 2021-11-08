@@ -1409,7 +1409,7 @@ if __name__ == "__main__":
         os.system("cls")
 
         print("-" * 50)
-        print("| {0}: keyalg {1}, keylen {2}, ivmask {3}".format("Insecure" if vault_insecure_mode else "Secure", pargs.keylen, pargs.keyalg, pargs.ivmask_len))
+        print("| {0}: keyalg {1}, keylen {2}, ivmask {3}".format("Insecure" if vault_insecure_mode else "Secure", pargs.key, pargs.keyalg, pargs.keylen, pargs.ivmask_len))
         print("-" * 50)
 
         if isinstance(render_search_filter, list):
