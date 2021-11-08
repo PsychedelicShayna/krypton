@@ -25,7 +25,7 @@ import pyperclip
 COMMAND_REFERENCE_TEXT:str = """
 This is the command reference for Krypton, here you can find all of the relevant
 commands for interacting with this password manager. This does not include the
-command line flags, to view those use the --help / -h flag when running Krypton.
+command line arguments, to view those use the --help or -h argument when running Krypton.
 
 Command Reference Legend
 --------
@@ -1229,7 +1229,7 @@ def IntegrityCheck(filepath:str, hash_in_ram:str) -> bool:
 
 
 if __name__ == "__main__":
-    argp = argparse.ArgumentParser(description = "Python CLI implementation of (L)ocally(S)tored(P)assword(M)anager")
+    argp = argparse.ArgumentParser()
 
 
     argp.add_argument(
