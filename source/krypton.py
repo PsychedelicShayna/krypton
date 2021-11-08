@@ -95,6 +95,11 @@ ivmask [N]            | Sets the length of the IV mask - the amount of random by
                       | from the encryption input/output data in order to guarantee a random output
                       | for the first round of XOR. Must be a minimum of 16 to be secure, but can
                       | be set to any size, though a high value will increase the file size.
+----------------------------------------------------------------------------------------------------
+dumpjson              | Dumps the vault stored in RAM into the terminal as raw unencrypted JSON.
+                      | Useful in case you lose filesystem access for whatever reason, and must
+                      | get your credentials out of RAM. One of the two options presented when
+                      | an integrity check fails.
 ====================================================================================================
 
 Saving, Viewing, Restoring Changes:
