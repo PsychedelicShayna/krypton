@@ -20,10 +20,34 @@ Krypton is an open source command line password manager built in Python, intende
 - You're more comfortable with a command line, or find it more efficient than a GUI.
 - You have Python experience, and want a password manager that can be easily tweaked or extended.
 
+
+## Krypton Command Line Arguments
+This is the command line argument reference for Krypton, automatically generated via argparse. Comand line arguments are not used to directly interact with Krypton; scroll down for the command reference.
+```
+usage: krypton.py [-h] --file [VAULTPATH] [--keylen [{16,24,32}]]
+                  [--keyalg [{md5-sha1,shake_256,shake_128,sha512_256,sha256,sha384,sha512,sm3,sha3_224,whirlpool,mdc2,md4,sha3_256,blake2b,ripemd160,sha3_384,sha512_224,md5,sha3_512,blake2s,sha1,sha224}]]
+                  [--ivmask [IVMASK_LEN]] [--insecure] [--debug]
+                  
+optional arguments:
+  -h, --help            show this help message and exit
+  --file [VAULTPATH], -f [VAULTPATH]
+                        A path pointing to the vault file that should be created or loaded.
+  --keylen [{16,24,32}], -kl [{16,24,32}]
+                        The AES-CBC key length to use for encryption/decryption; 128=>16, 196=>24, 256=>32
+  --keyalg [{md5-sha1,shake_256,shake_128,sha512_256,sha256,sha384,sha512,sm3,sha3_224,whirlpool,mdc2,md4,sha3_256,blake2b,ripemd160,sha3_384,sha512_224,md5,sha3_512,blake2s,sha1,sha224}], -ka [{md5-sha1,shake_256,shake_128,sha512_256,sha256,sha384,sha512,sm3,sha3_224,whirlpool,mdc2,md4,sha3_256,blake2b,ripemd160,sha3_384,sha512_224,md5,sha3_512,blake2s,sha1,sha224}]
+                        The name of the hashlib algorithm to be applied onto the password from which --keylen amount of bytes will be used as the AES-CBC key.
+  --ivmask [IVMASK_LEN], -ivm [IVMASK_LEN]
+                        The amount of random bytes that should be added or stripped from the start of the encryption/decryption output in order to mask the IV; should be 16 at the
+                        very least (AES block size)
+  --insecure, -is       When present, this flag makes the program treat the file pointed to by --file as an unencrypted insecure vault, decryption will not be attempted. This also
+                        affects the encryption of newly created vaults.
+  --debug, -db          This flag enables the printing of additional information for debugging purposes.
+  ```
+
 ## Krypton Command Reference
 This is the command reference for Krypton, here you can find all of the relevant
 commands for interacting with this password manager. This does not include the
-command line flags, to view those use the --help / -h flag when running Krypton.
+command line arguments, to view those use the --help or -h argument when running Krypton.
 ```
 Command Reference Legend
 --------
