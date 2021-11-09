@@ -23,6 +23,24 @@ Krypton is an open source command line password manager built in Python, intende
 ## Basic Operations (demo)
 Here are some examples on how you would do some basic common operations in Krypton. A more [comprehensive command reference](#Krypton-Command-Reference) can be found further down.
 
+### Create New Vault
+![](demo-gifs/new_vault_10fps.gif)
+
+### Create New Account & Save Changes
+![](demo-gifs/new_account_and_save_10fps.gif)
+
+### Make Changes, View Changes, Revert Changes
+![](demo-gifs/change_and_revert_10fps.gif)
+
+### Load Vault & Copy/Retrieve Value
+![](demo-gifs/load_and_copy_10fps.gif)
+
+### Cycle Pages, Page Rows, Search Filters
+![](demo-gifs/view_options_10fps.gif)
+
+### Create New Vault From JSON
+![](demo-gifs/vault_from_json_10fps.gif)
+
 ## Krypton Command Line Arguments
 This is the command line argument reference for Krypton, automatically generated via argparse. Comand line arguments are not used to directly interact with Krypton; scroll down for the command reference.
 ```
