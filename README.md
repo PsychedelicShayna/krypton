@@ -2,8 +2,6 @@
 
 Krypton is an open source command line password manager built in Python, intended for power users with a heavy emphasis on privacy. I created this password manager because I don't trust my credentials in the hands of company servers running proprietary code behind closed doors; I want complete control over my password manager, its security, and where the data ends up. I also find most password managers to be lacking in basic features as a result of oversimplifying user interaction for the sake of appealing to the average consumer - this is not one such password manager.
 
-
-
 ### You shouldn't use Krypton if...
 - You're unfamiliar with the command line, or dislike using it.
 - You can't live without a mobile app or browser extension (coming in the future).
@@ -19,6 +17,13 @@ Krypton is an open source command line password manager built in Python, intende
 - You want more advanced functionality out of your password manager.
 - You're more comfortable with a command line, or find it more efficient than a GUI.
 - You have Python experience, and want a password manager that can be easily tweaked or extended.
+
+## Dependencies
+- [PyCryptoDome](https://pypi.org/project/pycryptodome/) - Cryptography Library
+- [Pyperclip3](https://pypi.org/project/pyperclip3/) - Cross-platform Clipboard Access
+```
+python -m pip install pycryptodome pyperclip3
+```
 
 ## Basic Operations (demo)
 Here are some examples on how you would do some basic common operations in Krypton. A more [comprehensive command reference](#Krypton-Command-Reference) can be found further down.
