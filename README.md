@@ -20,6 +20,8 @@ Krypton is an open source command line password manager built in Python, intende
 - You're more comfortable with a command line, or find it more efficient than a GUI.
 - You have Python experience, and want a password manager that can be easily tweaked or extended.
 
+## Basic Operations (demo)
+Here are some examples on how you would do some basic common operations in Krypton. A more [comprehensive command reference](#Krypton-Command-Reference) can be found further down.
 
 ## Krypton Command Line Arguments
 This is the command line argument reference for Krypton, automatically generated via argparse. Comand line arguments are not used to directly interact with Krypton; scroll down for the command reference.
