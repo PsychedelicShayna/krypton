@@ -3,5 +3,6 @@
 !.gitignore
 !README.md
 !LICENSE
-
 !source/
+
+*.vlt
