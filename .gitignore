@@ -3,7 +3,7 @@
 !.gitignore
 !README.md
 !LICENSE
-!src/
+!source/
 !demo-gifs/
 
 *.vlt
