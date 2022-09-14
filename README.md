@@ -25,6 +25,10 @@ Krypton is an open source command line password manager built in Python, intende
 python -m pip install pycryptodome pyperclip3
 ```
 
+## Security & Format
+Data is stored in `.vlt` vault files, which are AES-256-CBC encrypted JSON files. The initialization vector is always random, however it is not stored anywhere, instead, a minimum of 16 random bytes are injected at the start of the input data whenever encryption is performed, so that the initialization vector never gets XOR'd with the actual input data, and only gets XOR'd with random garbage, that way, decryption is allowed to fail for the first block when no IV is provided. This avoids the hassle of keeping track of the IV, without losing out on security, at the cost of an extra 16 bytes to the input - this is called an "IV Mask". Argon2 is used for key derivation, with a time cost of 16, memory cost of 32MB, parallelism of 4, and ID as the mode.
+
+
 ## Basic Operations (demo)
 Here are some examples on how you would do some basic common operations in Krypton. A more [comprehensive command reference](#Krypton-Command-Reference) can be found further down.
 
