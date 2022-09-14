@@ -29,22 +29,22 @@ python -m pip install pycryptodome pyperclip3
 Here are some examples on how you would do some basic common operations in Krypton. A more [comprehensive command reference](#Krypton-Command-Reference) can be found further down.
 
 ### Create New Vault
-![](demo-gifs/new_vault_10fps.gif)
+![new_vault_10fps](https://user-images.githubusercontent.com/34726837/190071642-08211965-f2b8-4a49-a16e-a1c3c329269b.gif)
 
 ### Create New Account & Save Changes
-![](demo-gifs/new_account_and_save_10fps.gif)
+![new_account_and_save_10fps](https://user-images.githubusercontent.com/34726837/190071689-ced3a001-f53e-48e6-b74a-73249167ab00.gif)
 
 ### Make Changes, View Changes, Revert Changes
-![](demo-gifs/change_and_revert_10fps.gif)
+![change_and_revert_10fps](https://user-images.githubusercontent.com/34726837/190071729-1c7884fc-3007-429f-aaad-985f3f63d5fb.gif)
 
 ### Load Vault & Copy/Retrieve Value
-![](demo-gifs/load_and_copy_10fps.gif)
+![load_and_copy_10fps](https://user-images.githubusercontent.com/34726837/190071763-28c92310-9ae2-468c-bc06-1ee10639a02a.gif)
 
 ### Cycle Pages, Page Rows, Search Filters
-![](demo-gifs/view_options_10fps.gif)
+![view_options_10fps](https://user-images.githubusercontent.com/34726837/190071784-b7076ee9-bba0-43cf-8f89-c22ace5d94dc.gif)
 
 ### Create New Vault From JSON
-![](demo-gifs/vault_from_json_10fps.gif)
+![vault_from_json_10fps](https://user-images.githubusercontent.com/34726837/190071819-b2543255-1b7b-4a2d-ab98-44e25f0e9a59.gif)
 
 ## Krypton Command Line Arguments
 This is the command line argument reference for Krypton, automatically generated via argparse. Comand line arguments are not used to directly interact with Krypton; scroll down for the command reference.
