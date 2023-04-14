@@ -1,5 +1,20 @@
 # The Krypton Password Manager
 
+### NOTICE:
+Apart from crucial security fixes, this project is not maintained. Krypton's as-of-yet unnamed successor is going to be written from scratch in pure Rust. OpenSSL is going to be used as the cryptographic provider. Various convenience, integration, and quality-of-life features that I had planned for Krypton will instead go toward its Rust-based successor, including but not limited to:
+
+- A fully fledged TUI that will adjust itself to your terminal window, and have overridable width/height parameters (think fzf)
+- A non-interactive CLI variant that will effectively allow you to rip 
+- User Defined Key/Value Presets & Account Structure Presets (repeated Emails, usernames, etc)
+- `ChaCha20` will be supported and used by default, over `AES`. `AES` will always be supported, but will not be the default anymore.
+- Fuzzy finding support for account/entry searching.
+- Extended editing commands, and optional VIM motions.
+- *And many more*
+
+This is still my daily password manager, and it's perfectly usable as it is, however, active development is not being done.  
+
+----
+
 Krypton is an open source command line password manager built in Python, intended for power users with a heavy emphasis on privacy. I created this password manager because I don't trust my credentials in the hands of company servers running proprietary code behind closed doors; I want complete control over my password manager, its security, and where the data ends up. I also find most password managers to be lacking in basic features as a result of oversimplifying user interaction for the sake of appealing to the average consumer - this is not one such password manager.
 
 ### You shouldn't use Krypton if...
@@ -8,6 +23,7 @@ Krypton is an open source command line password manager built in Python, intende
 - You favor mouse controls over keyboard controls.
 - You have an aversion to learning curves.
 - You value convenience over privacy.
+
 
 ---
 
