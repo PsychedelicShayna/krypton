@@ -10,7 +10,7 @@ Apart from crucial security fixes, this project is not maintained. Krypton's as-
 - Extended editing commands, and optional VIM motions.
 
 
-You should also be aware of the fact that Krypton's cryptographic library is not OpenSSL, but rather, a pure Python cryptographic library, [PyCryptoDome(https://github.com/Legrandin/pycryptodome), which is a well maintained fork of the long since deprecated PyCrypto. 
+You should also be aware of the fact that Krypton's cryptographic library is not OpenSSL, but rather, a pure Python cryptographic library, [PyCryptoDome](https://github.com/Legrandin/pycryptodome), which is a well maintained fork of the long since deprecated PyCrypto. 
 
 
 ### NOTICE:
