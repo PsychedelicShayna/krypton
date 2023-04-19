@@ -49,9 +49,10 @@ Krypton is an open source command line password manager built in Python, intende
 
 ## Dependencies
 - [PyCryptoDome](https://pypi.org/project/pycryptodome/) - Cryptography Library
-- [Pyperclip3](https://pypi.org/project/pyperclip3/) - Cross-platform Clipboard Access
+- [Pyperclip](https://pypi.org/project/pyperclip/) - Cross-platform Clipboard Access
+- [Argon2-Cffi](https://pypi.org/project/argon2-cffi/) - A key derivation algorithm even stronger than bcrypt!
 ```
-python -m pip install pycryptodome pyperclip3
+python -m pip install pycryptodome pyperclip argon2-cffi
 ```
 
 ## Security & Format
