@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "krypton"
+version = "0.1.0"
+description = "A minimalist yet cryptographically secure password manager, cut off from the internet, while being completely unopinionated about the data structure of your entries, leaving you in complete control."
+authors = ["PsychedelicShayna (0x0000@tuta.io)"]
+license = "GPL-3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pycryptodome = "^3.17"
+pyperclip = "^1.8.2"
+argon2-cffi = "^21.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
