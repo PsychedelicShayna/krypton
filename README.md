@@ -1,4 +1,17 @@
 # The Krypton Password Manager
+### NOTICE:
+Apart from crucial security fixes, this project is not maintained. Krypton's as-of-yet unnamed successor is going to be written from scratch in pure Rust. OpenSSL is going to be used as the cryptography provider, ensuring trust. Various convenience, integration, and quality-of-life features that I had planned for Krypton will instead go toward its Rust-based successor.
+
+- A Fully Fledged TUI
+- A Non-Interactive CLI Variant 
+- User Defined Key/Value Presets & Account Structure Presets (repeated Emails, usernames, etc)
+- `ChaCha20` will be supported and used by default, over `AES`. `AES` will always be supported, but will not be the default anymore.
+- Fuzzy finding support for account/entry searching.
+- Extended editing commands, and optional VIM motions.
+
+
+You should also be aware of the fact that Krypton's cryptographic library is not OpenSSL, but rather, a pure Python cryptographic library, [PyCryptoDome(https://github.com/Legrandin/pycryptodome), which is a well maintained fork of the long since deprecated PyCrypto. 
+
 
 Krypton is an open source command line password manager built in Python, intended for power users with a heavy emphasis on privacy. I created this password manager because I don't trust my credentials in the hands of company servers running proprietary code behind closed doors; I want complete control over my password manager, its security, and where the data ends up. I also find most password managers to be lacking in basic features as a result of oversimplifying user interaction for the sake of appealing to the average consumer - this is not one such password manager.
 
@@ -30,7 +43,7 @@ Data is stored in `.vlt` vault files, which are AES-256-CBC encrypted JSON files
 
 
 ## Basic Operations (demo)
-Here are some examples on how you would do some basic common operations in Krypton. A more [comprehensive command reference](#Krypton-Command-Reference) can be found further down.
+Here are some examples of how you would do some basic common operations in Krypton. A more [comprehensive command reference](#Krypton-Command-Reference) can be found further down.
 
 ### Create New Vault
 ![new_vault_10fps](https://user-images.githubusercontent.com/34726837/190071642-08211965-f2b8-4a49-a16e-a1c3c329269b.gif)
