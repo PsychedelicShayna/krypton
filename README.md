@@ -5,24 +5,12 @@ Apart from crucial security fixes, this project is not maintained. Krypton's as-
 - A Fully Fledged TUI
 - A Non-Interactive CLI Variant 
 - User Defined Key/Value Presets & Account Structure Presets (repeated Emails, usernames, etc)
-- `ChaCha20` will be supported and used by default, over `AES`. `AES` will always be supported, but will not be the default anymore.
+- Stream cipher support, such as `XChaCha20` and `AES-GCM`, which has certain advantages as well as disadvantages, over `AES-CBC`. `AES-CBC` will always be supported, and will be default, but other options, will be available. Other such options include `Twofish`, the since deprecated triple `DES`, and the other finalist algorithms for the (A)dvanced (E)ncryption (S)tandard competition. I stress that this is not a security enhancing idea, you should stick with defaults if you do not know precisely what you are doing, or you might end up making the encryption accidentally less secure.
+- Optional, fine grain control over all aspects of the cryptography, including Argon2 parameters, other key derivation methods, padding systems, multiple-key & multicipher encryption, salting methods, choice of IV.. etc. This is intended for those who want to go a step further, and it isn't advised that you deviate from the defaults if you are unsure. 
 - Fuzzy finding support for account/entry searching.
 - Extended editing commands, and optional VIM motions.
-
 
 You should also be aware of the fact that Krypton's cryptographic library is not OpenSSL, but rather, a pure Python cryptographic library, [PyCryptoDome](https://github.com/Legrandin/pycryptodome), which is a well maintained fork of the long since deprecated PyCrypto. 
-
-
-### NOTICE:
-Apart from crucial security fixes, this project is not maintained. Krypton's as-of-yet unnamed successor is going to be written from scratch in pure Rust. OpenSSL is going to be used as the cryptographic provider. Various convenience, integration, and quality-of-life features that I had planned for Krypton will instead go toward its Rust-based successor, including but not limited to:
-
-- A fully fledged TUI that will adjust itself to your terminal window, and have overridable width/height parameters (think fzf)
-- A non-interactive CLI variant that will effectively allow you to rip 
-- User Defined Key/Value Presets & Account Structure Presets (repeated Emails, usernames, etc)
-- `ChaCha20` will be supported and used by default, over `AES`. `AES` will always be supported, but will not be the default anymore.
-- Fuzzy finding support for account/entry searching.
-- Extended editing commands, and optional VIM motions.
-- *And many more*
 
 This is still my daily password manager, and it's perfectly usable as it is, however, active development is not being done.  
 
